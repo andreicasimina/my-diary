@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Diary</string>
+    <string name="day_text">日</string>
+    <string name="month_text">月</string>
+    <string name="year_text">年</string>
+    <string name="settings_button">設定</string>
+    <string name="calendar_button">日記</string>
+    <string name="new_button">新規</string>
+    <string name="back_button">戻る</string>
+    <string name="entry_text">Entry Text</string>
+    <string name="sunday">日</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+    <string name="right_button">右</string>
+    <string name="left_button">左</string>
+    <string name="font_size_button">フォントサイズ</string>
+    <string name="reminder_button">リマインダー</string>
+    <string-array name="font_size_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

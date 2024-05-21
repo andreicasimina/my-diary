@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsScreen">
+
+    <ImageButton
+        android:id="@+id/return_button"
+        android:layout_width="@dimen/settings_button_margin"
+        android:layout_height="@dimen/settings_button_margin"
+        android:layout_gravity="top"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="@string/back_button"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="80dp">
+
+        <TextView
+            style="?textSizeLarge"
+            android:id="@+id/reminder_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set time..."
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleColor="#88FFFFFF"
+            app:mrl_rippleOverlay="true">
+            <Button
+                app:backgroundTint="@null"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                style="?textSizeLarge"
+                android:id="@+id/reminder_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reminder_button"
+                android:padding="20dp"
+                android:background="@drawable/settings_button"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <Spinner
+            android:layout_marginTop="40dp"
+            style="?textSizeLarge"
+            android:id="@+id/font_size_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/day_text"
+            android:gravity="center"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleColor="#88FFFFFF"
+            app:mrl_rippleOverlay="true">
+            <Button
+                app:backgroundTint="@null"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                style="?textSizeLarge"
+                android:id="@+id/font_size_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/font_size_button"
+                android:padding="20dp"
+                android:background="@drawable/settings_button"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

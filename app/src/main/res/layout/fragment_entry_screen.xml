@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntryScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/return_button"
+            android:layout_width="@dimen/settings_button_margin"
+            android:layout_height="@dimen/settings_button_margin"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="@string/back_button"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <Spinner
+            android:id="@+id/year_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/year_text"
+            android:gravity="end"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            style="?textSizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year_text" />
+
+        <Spinner
+            android:id="@+id/month_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/month_text"
+            android:gravity="end"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            style="?textSizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_text" />
+
+        <Spinner
+            android:id="@+id/day_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/day_text"
+            android:gravity="end"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            style="?textSizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_text" />
+
+    </LinearLayout>
+
+    <EditText
+        style="?textSizeMedium"
+        android:hint="@string/entry_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/entry_content_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:ignore="LabelFor,VisualLintTextFieldSize"
+        android:background="@android:color/transparent"
+        android:importantForAutofill="no"/>
+
+</FrameLayout>

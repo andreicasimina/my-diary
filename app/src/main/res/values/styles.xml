@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeSmall">
+        <item name="textSizeLarge">@style/medium_text</item>
+        <item name="textSizeMedium">@style/small_text</item>
+        <item name="textSizeSmall">@style/smaller_text</item>
+    </style>
+
+    <style name="AppThemeMedium">
+        <item name="textSizeLarge">@style/large_text</item>
+        <item name="textSizeMedium">@style/medium_text</item>
+        <item name="textSizeSmall">@style/small_text</item>
+    </style>
+
+    <style name="AppThemeLarge">
+        <item name="textSizeLarge">@style/larger_text</item>
+        <item name="textSizeMedium">@style/large_text</item>
+        <item name="textSizeSmall">@style/medium_text</item>
+    </style>
+
+    <!-- SMALLEST FONT SIZE -->
+    <style name="smallest_text">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- SMALLER FONT SIZE -->
+    <style name="smaller_text">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- SMALL FONT SIZE -->
+    <style name="small_text">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+
+    <!-- MEDIUM FONT SIZE -->
+    <style name="medium_text">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+
+    <!-- LARGE FONT SIZE -->
+    <style name="large_text">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <!-- LARGER FONT SIZE -->
+    <style name="larger_text">
+        <item name="android:textSize">70sp</item>
+    </style>
+
+    <!-- LARGEST FONT SIZE -->
+    <style name="largest_text">
+        <item name="android:textSize">80sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_button_size">120dp</dimen>
+    <dimen name="small_text_size">40sp</dimen>
+    <dimen name="text_size">50sp</dimen>
+    <dimen name="day_square_padding">2dp</dimen>
+    <dimen name="day_square_margin">3dp</dimen>
+    <dimen name="settings_button_margin">60dp</dimen>
+</resources>

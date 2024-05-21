@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarScreen">
+
+    <ImageButton
+        android:id="@+id/return_button"
+        android:layout_width="@dimen/settings_button_margin"
+        android:layout_height="@dimen/settings_button_margin"
+        android:layout_gravity="top"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="@string/back_button"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_marginTop="80dp"
+        android:id="@+id/calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_calendar_container"/>
+
+</FrameLayout>

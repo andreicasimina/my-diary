@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarContainer"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/calendar_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/left_button"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/baseline_arrow_left_24"
+            android:background="@android:color/transparent"
+            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
+
+        <Spinner
+            style="?textSizeSmall"
+            android:id="@+id/calendar_year_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/year_text"
+            android:gravity="end"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            style="?textSizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/year_text" />
+
+        <Spinner
+            style="?textSizeSmall"
+            android:id="@+id/calendar_month_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/month_text"
+            android:gravity="end"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            style="?textSizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/month_text" />
+
+        <ImageButton
+            android:id="@+id/calendar_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/right_button"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/baseline_arrow_right_24"
+            android:background="@android:color/transparent"
+            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sunday"
+            android:gravity="center" />
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/monday"
+            android:gravity="center" />
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tuesday"
+            android:gravity="center" />
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wednesday"
+            android:gravity="center" />
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thursday"
+            android:gravity="center" />
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/friday"
+            android:gravity="center" />
+
+        <TextView
+            style="?textSizeSmall"
+            android:layout_margin="@dimen/day_square_margin"
+            android:padding="@dimen/day_square_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/saturday"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/days_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_days_container"/>
+
+</LinearLayout>
